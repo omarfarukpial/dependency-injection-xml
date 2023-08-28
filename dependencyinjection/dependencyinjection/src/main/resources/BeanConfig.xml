@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="photographer1" class="model.Photographer">-->
+<!--        <property name="id" value="101"></property>-->
+<!--        <property name="name" value="Pial"></property>-->
+<!--        <property name="genre" value="Wildlife"></property>-->
+<!--        <property name="camera" ref="camera1"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="camera1" class="model.Camera">-->
+<!--        <property name="brand" value="Canon"></property>-->
+<!--    </bean>-->
+
+    <bean id="photographer1" class="model.Photographer">
+        <constructor-arg index="0" value="101"></constructor-arg>
+        <constructor-arg index="1" value="Pial"></constructor-arg>
+        <constructor-arg index="2" value="Wildlife"></constructor-arg>
+        <constructor-arg index="3" ref="camera1"></constructor-arg>
+    </bean>
+
+    <bean id="camera1" class="model.Camera">
+        <constructor-arg index="0" value="Canon"></constructor-arg>
+    </bean>
+
+
+</beans>
